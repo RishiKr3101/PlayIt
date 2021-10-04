@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<style>
+    body{
+        text-align: left;
+        background-color: lavender
+    }
+    .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #000;
+   color: #fff;
+   border-top: 1px solid #000;
+   text-align: center;
+}
+</style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +25,8 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="brand-title">PlayED</div>
+    <nav class="navbar" style="display: flex; justify-content:space-between;flex-direction:column;">
+        <div class="brand-title" style="font-weight: 800;">PlayED</div>
 
         <a href="#" class="toggle-button">
             <span class="bar"></span>
@@ -39,11 +54,14 @@
 
     </div>
 
-
+   
     <div class="main-content">
 
         {%block content%} {% endblock%}
     </div>
+    <div class="footer">
+        <p>Copyright 2021 Rishi</p>
+      </div>
 
 
     <script src="static/js/main.js"></script>
