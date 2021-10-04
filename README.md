@@ -1,2 +1,2 @@
 # PlayIt
-In Progress
+ In Progress of development
